@@ -13,75 +13,74 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Delius&family=DynaPuff:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap"
         rel="stylesheet">
+    <!-- İcon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- css link -->
-    <link rel="stylesheet" href="../style.css/index.css">
+    <link rel="stylesheet" href="../style.css/erişilebilirEnerji.css">
 
 </head>
 
 <body>
-    <!-- Navvbar - start -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Erişilebilir ve Temiz Enerji</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Proje Ekibi</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Daha Fazla
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <!-- Hero - Start -->
+    <header class="hero">
+        <div class="hero-bg">
+
+            <!-- Navvbar - start -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">EcoFlow</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-auto">
+
+                            <i class="bi bi-list" type="button" data-bs-toggle="offcanvas" data-bs-target="#moreMenu"
+                                aria-controls="moreMenu" aria-label="Menüyü Aç"></i>
                         </ul>
-                    </li>
-                </ul>
+            </nav>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="moreMenu" aria-labelledby="moreMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="moreMenuLabel">EcoFlow</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Kapat"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="list-group">
+                        <a class=" list-group-item-action" href="./erisilebilirEnerjiNedir.html">Erişilebilir Enerji Nedir?</a>
+                        <a class="list-group-item-action" href="#">Evde Tasarruf
+                            Önerileri</a>
+                        <a class="list-group-item-action" href="#">Yenilenebilir
+                            Enerji Türleri</a>
+                        <a class=" list-group-item-action" href="#">Kaynaklar</a>
+                        <a class="list-group-item-action" href="#">İletişim</a>
+                        <a class="list-group-item-action" href="#">Sponsorlar</a>
+                        <a class=" list-group-item-action" href="#">Gelecek Hayalim Kimdir</a>
+                        <a class=" list-group-item-action" href="#">Proje Ekibi</a>
+                    </div>
+                </div>
             </div>
+            <!-- Navvbar - End -->
+
+            <div class="hero-content text-center text-white">
+                <h1>Gelecek Senin Elinde</h1>
+                <p>Erişilebilir ve temiz <br> enerji ile sürdürülebilir bir dünya</p>
+            </div>
+
+            <div class="mini-copy">© 2025 EcoFlow • Gelecek Hayalim</div>
         </div>
-    </nav>
-    <!-- Navvbar - End -->
-
-    <section class="hero-section">
-    <img src="../İmages/nav.jpg" alt="Yeşil Dünya ve Temiz Enerji Bağlantısı" class="img-fluid hero-banner-img">
-    
-    <div class="hero-caption">
-        <h1>Gelecek Senin Elinde!</h1>
-        <p>Evsel ve yerel çözümlerle temiz enerjiye erişimi kolaylaştırın.</p>
-    </div>
-</section>
-
-    <!-- Carusel - Start -->
-    <!-- Carusel - End -->
-
-    <!-- Card - Start -->
-    <!-- Card - End -->
-
-    <!-- Footer - Start -->
-    <!-- Footer - End -->
-
-
-
-
+    </header>
+    <!-- Hero - End-->
+ 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
