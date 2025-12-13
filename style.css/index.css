@@ -114,8 +114,8 @@ body {
 }
 .energy-ring {
   position: absolute;
-  width: 470px;
-  height: 470px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   left: 48%;
   top: 52%;
@@ -125,7 +125,8 @@ body {
    box-shadow: 0 0 30px rgba(255, 255, 150, 0.15);
   filter: blur(0.2px);
 
-  animation: ringRotate 28s linear infinite;
+  animation: ringRotate 60s linear infinite;
+
 }
 @keyframes ringRotate{
   from { transform: translate(-50%, -50%) rotate(0deg); }
@@ -133,7 +134,7 @@ body {
 }
 
 /* Baloncuk düzenlemelri */
-.energy-bubble{
+.energy-bubble {
   position: absolute;
   width: 64px;
   height: 64px;
@@ -179,6 +180,12 @@ body {
 @media (max-width: 576px){
   .energy-ring{ width: 300px; height: 300px; }
   .energy-bubble{ width: 52px; height: 52px; font-size: 18px; }
+}
+
+.energy-bubble img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
 }
 
 
