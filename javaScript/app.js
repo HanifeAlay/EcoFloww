@@ -1,7 +1,4 @@
-/* Baloncukları oluşturuyoruz */
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Kartlar scroll ile gelsin
   const cards = document.querySelectorAll(".reveal");
 
   const io = new IntersectionObserver((entries) => {
@@ -12,3 +9,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.forEach(card => io.observe(card));
 });
+
