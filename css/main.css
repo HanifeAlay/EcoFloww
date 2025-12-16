@@ -1,0 +1,87 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+.eco-navbar{
+  position: sticky; 
+  top: 0;           
+  z-index: 999;       
+  height: 80px;
+
+  padding: 12px 16px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+
+.eco-brand{
+  font-size: 32px;    
+  font-weight: 800;
+  color: #1f3f1b !important;
+  letter-spacing: .5px;
+}
+
+/* Menü ikonu */
+.menu-icon{
+  font-size: 34px;
+  color: #1f3f1b;
+  cursor: pointer;
+}
+
+/* OFFCANVAS */
+.offcanvas{
+  background-color: #f7f8f5;
+  color: #1f3f1b;
+}
+
+.offcanvas-title{
+  font-weight: 800;
+  font-size: 28px;
+  color: #1f3f1b;
+}
+
+.offcanvas-body{
+  padding-top: 10px;
+}
+
+.offcanvas-body a{
+  display: block;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1f3f1b;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.offcanvas-body a:hover{
+  color: #4f7c2b;
+}
+
+/* Footer */
+.footer{
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding: 18px 0;
+  text-align: center;
+  color: #1f3f1b;
+}
+/* Responsive */
+@media (max-width: 768px){
+  .hero-bg{
+    height: 520px;
+  }
+  .rings, .orbit-ring{
+    width: 320px;
+    height: 320px;
+  }
+  .orbit-item{
+    width: 72px;
+    height: 72px;
+  }
+  .orbit-item img{
+    width: 32px;
+    height: 32px;
+  }
+}
