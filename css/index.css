@@ -1,9 +1,3 @@
-html, body{
-  margin: 0;
-  padding: 0;
-  font-family: "Playfair Display", serif;
-}
-
 .hero{
   min-height: unset;
   position: relative;
@@ -31,84 +25,36 @@ html, body{
   pointer-events: none;
 }
 
-.navbar{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-  padding: 12px 16px;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(3px);
-  height: 80px;
-}
-.navbar-brand {
-  font-size: 35px;
-}
-
-.menu-icon{
-  font-size: 35px;
-  color: #1f3f1b;
-  cursor: pointer;
-}
-
-/* OFFCANVAS */
-.offcanvas{
-  background-color: #f7f8f5;
-  color: #1f3f1b;
-}
-
-.offcanvas-title{
-  font-weight: 700;
-  font-size: 30px;
-  color: #1f3f1b;
-}
-
-.offcanvas-body{
-  padding-top: 10px;
-}
-
-.offcanvas-body a{
-  display: block;
-  padding: 16px 0;
-  font-size: 18px;
-  font-weight: 500;
-  color: #1f3f1b;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-}
-
-.offcanvas-body a:hover{
-  color: #4f7c2b;
-}
-
 /* HERO CONTENT (yazı) */
 .hero-content{
   position: absolute;
-  top: 50%;
-  left: 48%;
+  top: 42%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
   text-align: center;
   width: max-content;
-  max-width: 90vw;
+  max-width: 90%;
+  padding: 0 1rem;
 }
 
-.hero-content h1{
+.hero-content h2{
   margin: 0;
   color: #1f3f1b;
   font-weight: 800;
   letter-spacing: 0.5px;
   text-shadow: 0 2px 10px rgba(255, 235, 120, 0.35);
-  font-size: 35px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: 1.15;
 }
 
 .hero-content p{
   margin: 10px 0 0;
   color: #2e5b2a;
   font-weight: 600;
-  font-size: 20px;
+   font-size: clamp(1rem, 2.2vw, 1.4rem);
+  line-height: 1.5;
   opacity: 0.95;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -118,7 +64,7 @@ html, body{
   50%  { filter: drop-shadow(0 0 12px rgba(255,255,150,0.45)); }
   100% { filter: drop-shadow(0 0 0 rgba(255,255,150,0)); }
 }
-.hero-content h1,
+.hero-content h2,
 .hero-content p{
   animation: glowPulse 2.8s ease-in-out infinite;
 }
@@ -132,38 +78,15 @@ html, body{
 }
 
 /* Ring katmanı */
-.rings{
-  position: absolute;
-  left: 49%;
-  top: 49%;
-  width: 620px;
-  height: 620px;
-  transform: translate(-50%, -50%);
-  will-change: transform;
-}
 
-.rings::before,
-.rings::after{
-  content:"";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 2px dashed rgba(248, 243, 175, 0.423);
-  animation: ringRotate 40s linear infinite;
-}
-
-@keyframes ringRotate{
-  from{ transform: rotate(0deg); }
-  to  { transform: rotate(360deg); }
-}
 
 /* ORBIT */
 .orbit-ring{
   position: absolute;
   left: 49%;
-  top: 51%;
-  width: 583px;
-  height: 589px;
+  top: 42%;
+  width: 500px;
+  height: 500px;
   transform: translate(-50%, -50%);
   z-index: 9;
   animation: orbitSpin 50s linear infinite;
@@ -341,19 +264,46 @@ html, body{
 
 /* Responsive */
 @media (max-width: 768px){
+  
+  /* Arkaplan yüksekliği */
   .hero-bg{
-    height: 520px;
+    height: 100vh; /* Sabit px yerine ekran boyu kadar olsun, daha güvenli */
+    background-position: center top; /* Resmi yukarı odakla */
   }
+
+  /* Çember Boyutları */
   .rings, .orbit-ring{
-    width: 320px;
-    height: 320px;
+    width: 300px; /* 320px bazen kenarlara çok yapışır, 300px daha güvenli */
+    height: 300px;
+    
+    /* Mobilde çemberi tam ortala ve biraz aşağı it */
+    left: 50%;
+    top: 60%; /* Yazının altına gelmesi için değeri artırdık */
   }
+
+  /* İkon Kutuları */
   .orbit-item{
-    width: 72px;
-    height: 72px;
+    width: 60px; /* Biraz daha küçültelim */
+    height: 60px;
+    
+    /* DİKKAT: Eğer ikonların yerleşimi bozulduysa, buraya margin ayarı gerekebilir 
+       veya ikonları yerleştirdiğin nth-child kodlarında translate değerini 150px'e çekmelisin. */
   }
+
+  /* İkon Resimleri */
   .orbit-item img{
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Yazı Alanı */
+  .hero-content{
+    width: 100%;
+    top: 51%; /* Yazıyı biraz daha yukarı alalım ki çemberle çakışmasın */
+    padding: 0 20px;
+  }
+  
+  .hero-content h2{
+    font-size: 1.8rem; /* Başlığı mobilde küçült */
   }
 }

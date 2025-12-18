@@ -1,26 +1,23 @@
+
 html, body{
   margin: 0;
   padding: 0;
   font-family: "Playfair Display", serif;
 }
 .eco-navbar{
-  position: sticky; 
-  top: 0;           
-  z-index: 999;       
-  height: 80px;
+  position: fixed; 
+  top: 0;
+  left: 0;           
+  z-index: 10;       
+  width: 100%;
 
   padding: 12px 16px;
-  background: rgba(255,255,255,0.65);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.052);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
-
-
-.eco-brand{
-  font-size: 32px;    
-  font-weight: 800;
-  color: #1f3f1b !important;
-  letter-spacing: .5px;
+.navbar-brand {
+  font-size: 35px;
 }
 
 /* Menü ikonu */
