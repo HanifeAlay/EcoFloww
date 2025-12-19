@@ -48,6 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  /* tasarruf */
+
+    const items = document.querySelectorAll(".reveal");
+
+  const iov = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add("show");
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(el => io.observe(el))
+
 });
 
 

@@ -19,14 +19,14 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/projeEkibi.css">
+  <link rel="stylesheet" href="../css/tasarruf.css">
 
 </head>
 
 <body>
 
   <!-- HEADER: Navbar + Offcanvas + Hero -->
-  <header class="page-header">
+  <header>
 
     <!-- NAVBAR (GLOBAL) -->
     <nav class="navbar navbar-expand-lg navbar-light eco-navbar">
@@ -63,19 +63,82 @@
           <a class="list-group-item-action" href="./erisilebilirEnerjiNedir.html">Erişilebilir ve Temiz Enerji
             Nedir?</a>
           <a class="list-group-item-action" href="./tasarruf.html">Nasıl Önlemler Alabiliriz</a>
+           <a class="list-group-item-action" href="./dünyadan-haberler.html">Dünyadan Temiz Enerji Gelişmeleri</a>
           <a class="list-group-item-action" href="./gelecekHayalim.html">Gelecek Hayalim ve iş ortakları kimdir?</a>
           <a class="list-group-item-action" href="./projeEkibi.html">Proje Ekibi</a>
         </nav>
       </div>
     </div>
-  </header>
+
+    <!-- HERO: Video -->
+    <section class="hero-video" aria-label="Tanıtım Videosu">
+      <video class="hero-video__media" src="../İmages/Firefly Create a single cinematic transformation video about clean and accessible energy.__Scene 1 –.mp4" autoplay muted loop playsinline>
+      </video>
+
+      <div class="hero-video__content">
+        <h2> Geleceğin Enerjisi Uzakta Değil. Bugün Başlıyor </h2>
+        <h4>Erişilebilir ve Temiz Enerji ile, Birlilte Sürdürülebilir bir Gelecek.</h4>
+
+      </div>
+
+      <div class="hero-video-overlay"></div>
+
+      <!-- Kontroller (butonlar videonun üstünde) -->
+
+      <div class="video-pause">
+        <button class="video-play-toggle" aria-label="Videoyu Oynat / Durdur ">
+          <i class="bi bi-pause"></i>
+        </button>
+      </div>
+    </section>
+ </header>
 
 
   <!-- MAIN -->
   <main>
-  </main>
+<section class="energy-flow">
+  <div class="video-overlay">
 
-    
+    <div class="flow-line"></div>
+
+    <div class="flow-title">
+      <h3>Temiz bir geleceğe bende varım diyorsan <br> aşağıdaki yolu takip et</h3>
+    </div>
+
+    <div class="flow-item left reveal step-1" style="--d:0s">
+      <span class="dot"></span>
+      <p>Evinde LED'e geç, çatı güneş enerjisi kooperatiflerini araştır,<br> pasif güneşten yararlan perdeleri aç</p>
+    </div>
+
+    <div class="flow-item right reveal step-2" style="--d:.1s">
+      <span class="dot"></span>
+      <p>Yeşil enerji tarifesi sunan tedarikçileri seç, yerel rüzgar projelerini destekle</p>
+    </div>
+
+    <div class="flow-item left reveal step-3" style="--d:.2s">
+      <span class="dot"></span>
+      <p>Su tasarrufu enerji tasarrufudur (daha az pompalama/ısıtma). Su ayak izini küçült</p>
+    </div>
+
+    <div class="flow-item right reveal step-4" style="--d:.3s">
+      <span class="dot"></span>
+      <p>Organik atıklarını kompost yap (biyogaz potansiyeli), ağaçlandırma projelerine katıl, gıda israfını önle</p>
+    </div>
+
+    <div class="flow-item left reveal step-5" style="--d:.4s">
+      <span class="dot"></span>
+      <p>Atıklarını ayrıştır, geri dönüşümü artır.</p>
+    </div>
+
+    <div class="flow-item right reveal step-6" style="--d:.5s">
+      <span class="dot"></span>
+      <p>Tebrikler Başardın</p>
+    </div>
+
+  </div>
+</section>
+</main>
+
 
   <!-- FOOTER -->
   <footer class="footer">
