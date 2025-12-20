@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* Hero Video Ses Controlü */
 
-  const video = document.querySelector(".hero-video");
+  const video = document.querySelector(".gelecekvideosu") || document.querySelector(".tasarrufvideosu");
   const soundBtn = document.querySelector(".video-sound-toggle");
   const icon = soundBtn?.querySelector("i");
 
